@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parte1</title>
-</head>
-<body>
-    <h1>un arreglo de números y calcule la suma total</h1>
-    <script src="script1.js"></script>
-</body>
-</html>
+const numeros = [5,6,7,8,9];
+let sumaTotal = 0;
+for (let i = 0; i < numeros.length; i++){
+    sumaTotal += numeros[i];
+}
+document.write("La suma total es: " + sumaTotal + "<br>"); // Agregamos <br> para salto de línea
+let promedio = sumaTotal / numeros.length;
+document.write("El promedio es: " + promedio);
